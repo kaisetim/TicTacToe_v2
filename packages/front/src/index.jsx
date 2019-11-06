@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
 
-import { PlayingField } from "./components/playingField/playingField.jsx";
+import { GamePage } from "./pages/gamePage/gamePage.jsx";
 
 document.addEventListener("DOMContentLoaded", () => {
   render(
     <>
-      <PlayingField></PlayingField>
+      <GamePage></GamePage>
     </>,
     document.getElementById("content")
   );
