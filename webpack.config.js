@@ -43,5 +43,5 @@ module.exports = {
       template: "./packages/front/src/index.html"
     })
   ],
-  mode: "development"
+  mode: "none"
 };

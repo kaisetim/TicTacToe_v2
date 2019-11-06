@@ -1,0 +1,21 @@
+$field-size: 9rem;
+$line-weight: 0.2rem;
+
+.playingField {
+  background-color: black;
+  width: calc(3 * ($field-size + $line-weight));
+  height: calc(3 * ($field-size + $line-weight));
+
+  .row {
+    width: 90vw;
+    margin: 0 auto;
+    float: left;
+
+    .field {
+      border: calc(#{$line-weight} / 2) solid black;
+      float: left;
+      width: $field-size;
+      height: $field-size;
+    }
+  }
+}

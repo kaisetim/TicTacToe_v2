@@ -1,0 +1,15 @@
+$box-size: 9rem;
+$line-weight: 0.2rem;
+
+.fieldRow {
+  width: calc(3 * (#{$box-size} + #{$line-weight}));
+  margin: 0 auto;
+
+  .box {
+    background-color: white;
+    height: $box-size;
+    width: $box-size;
+    float: left;
+    border: calc(#{$line-weight} / 2) solid rgb(0, 0, 0);
+  }
+}
