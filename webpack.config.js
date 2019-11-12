@@ -39,7 +39,7 @@ module.exports = {
     new TerserPlugin(),
     new HTMLWebpackPlugin({
       title: "TicTacToe_v2",
-      inject: "head",
+      inject: "body",
       template: "./packages/front/src/index.html"
     })
   ],

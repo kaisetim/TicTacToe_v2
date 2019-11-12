@@ -11,7 +11,3 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("content")
   );
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-  render(<TestComponent />, document.getElementById("content"));
-});
