@@ -1,0 +1,16 @@
+@import "../../sass/variables.scss";
+
+.field {
+  border: calc(#{$line-weight} / 2) solid black;
+  float: left;
+  width: $field-size;
+  height: $field-size;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}

@@ -1,5 +1,5 @@
-$field-size: 9rem;
-$line-weight: 0.2rem;
+@import "../../sass/variables.scss";
+@import "../field/field.scss";
 
 .playingField {
   background-color: black;
@@ -10,13 +10,6 @@ $line-weight: 0.2rem;
     width: 90vw;
     margin: 0 auto;
     float: left;
-
-    .field {
-      border: calc(#{$line-weight} / 2) solid black;
-      float: left;
-      width: $field-size;
-      height: $field-size;
-    }
   }
 }
 
