@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-import { Field } from "../field/field.jsx";
-
 import "./playingField.scss";
 
+import { Field } from "../field/field.jsx";
+
 export const PlayingField = () => {
-  // let [round, setRound] = useState();
-  // round = 0;
+  let [round, nextRound] = useState();
+  round = 0;
   // let player1Color = localStorage.getItem("player1Color");
   // let player2Color = localStorage.getItem("player2Color");
 
@@ -113,23 +113,28 @@ export const PlayingField = () => {
   //   }
   // };
 
+  nextRound = () => {
+    round++;
+    console.log(round);
+  };
+
   return (
     <>
       <div className="playingField">
         <div className="row">
-          <Field fieldNumber="0_0" />
-          <Field fieldNumber="0_1" />
-          <Field fieldNumber="0_2" />
+          <Field fieldNumber="0_0" onClickFunction={nextRound()} />
+          <Field fieldNumber="0_1" onClickFunction={nextRound()} />
+          <Field fieldNumber="0_2" onClickFunction={nextRound()} />
         </div>
         <div className="row">
-          <Field fieldNumber="1_0" />
-          <Field fieldNumber="1_1" />
-          <Field fieldNumber="1_2" />
+          <Field fieldNumber="1_0" onClickFunction={nextRound()} />
+          <Field fieldNumber="1_1" onClickFunction={nextRound()} />
+          <Field fieldNumber="1_2" onClickFunction={nextRound()} />
         </div>
         <div className="row">
-          <Field fieldNumber="2_0" />
-          <Field fieldNumber="2_1" />
-          <Field fieldNumber="2_2" />
+          <Field fieldNumber="2_0" onClickFunction={nextRound()} />
+          <Field fieldNumber="2_1" onClickFunction={nextRound()} />
+          <Field fieldNumber="2_2" onClickFunction={nextRound()} />
         </div>
       </div>
     </>
